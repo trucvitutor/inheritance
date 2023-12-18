@@ -8,7 +8,7 @@ public class Triangle extends Shape{
     public Triangle() {
     }
 
-    public Triangle(String color, double side1, double side2, double side3) {
+    public Triangle(String color, double side1, double side2, double side3,double are,double perimeter) {
         super(color);
         this.side1 = side1;
         this.side2 = side2;
@@ -53,6 +53,8 @@ public class Triangle extends Shape{
                 "side1=" + side1 +
                 ", side2=" + side2 +
                 ", side3=" + side3 +
+                ", area=" +  this.getArea()+
+                ", perimeter=" + this.getPerimeter() +
                 ", color=" + super.getColor() +
                 '}';
     }

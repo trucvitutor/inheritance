@@ -13,7 +13,11 @@ public class Test {
         double side3=Double.parseDouble(scanner.nextLine());
         System.out.println("nhap màu sắc:" );
         String color=scanner.nextLine();
-        Shape shape = new Triangle(color,side1,side2,side3);
+        System.out.println("nhap diện tích:" );
+        double area= Double.parseDouble(scanner.nextLine());
+        System.out.println("nhap màu sắc:" );
+        double perimeter= Double.parseDouble(scanner.nextLine());
+        Shape shape = new Triangle(color,side1,side2,side3,area,perimeter);
         System.out.println(shape);
     }
 }
